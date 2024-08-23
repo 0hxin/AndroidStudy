@@ -4,11 +4,11 @@ plugins {
 }
 
 android {
-    namespace = "com.example.app07_frag"
+    namespace = "com.example.app07_viewpager"
     compileSdk = 34
 
     defaultConfig {
-        applicationId = "com.example.app07_frag"
+        applicationId = "com.example.app07_viewpager"
         minSdk = 24
         targetSdk = 34
         versionCode = 1
@@ -45,7 +45,6 @@ dependencies {
     implementation(libs.material)
     implementation(libs.androidx.activity)
     implementation(libs.androidx.constraintlayout)
-    implementation(libs.androidx.fragment.ktx)
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)
