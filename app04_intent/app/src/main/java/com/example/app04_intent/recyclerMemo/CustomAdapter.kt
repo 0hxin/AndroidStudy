@@ -1,4 +1,4 @@
-package com.example.app04_intent
+package com.example.app04_intent.recyclerMemo
 
 import android.view.LayoutInflater
 import android.view.ViewGroup
@@ -21,7 +21,7 @@ class CustomAdapter:RecyclerView.Adapter<CustomAdapter.Holder>() {
                 true
             }
         }
-        fun setMemo(memo:Memo) {
+        fun setMemo(memo: Memo) {
             binding.textNo.text = "${memo.no}"
             binding.textTitle.text = "${memo.title}"
 

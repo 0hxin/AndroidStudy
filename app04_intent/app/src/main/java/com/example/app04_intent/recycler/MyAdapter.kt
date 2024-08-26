@@ -1,4 +1,4 @@
-package com.example.app04_intent
+package com.example.app04_intent.recycler
 
 import android.view.LayoutInflater
 import android.view.ViewGroup

@@ -1,4 +1,4 @@
-package com.example.app04_intent
+package com.example.app04_intent.recycler
 
 import android.os.Bundle
 import androidx.activity.enableEdgeToEdge
@@ -7,6 +7,7 @@ import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import androidx.recyclerview.widget.DividerItemDecoration
 import androidx.recyclerview.widget.LinearLayoutManager
+import com.example.app04_intent.R
 import com.example.app04_intent.databinding.ActivityMainActivity2RecyclerBinding
 
 class MainActivity2_recycler : AppCompatActivity() {

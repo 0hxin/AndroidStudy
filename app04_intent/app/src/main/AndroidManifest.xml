@@ -13,7 +13,7 @@
         android:theme="@style/Theme.App04_intent"
         tools:targetApi="31">
         <activity
-            android:name=".MainActivity3_memo"
+            android:name=".recyclerMemo.MainActivity3_memo"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -22,7 +22,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".MainActivity2_recycler"
+            android:name=".recycler.MainActivity2_recycler"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -31,7 +31,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".MainActivity3"
+            android:name=".dialog.MainActivity3"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -40,10 +40,10 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".MainActivitySub"
+            android:name=".sub.MainActivitySub"
             android:exported="false" />
         <activity
-            android:name=".MainActivity"
+            android:name=".sub.MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -52,13 +52,13 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".MainActivity2_Out"
+            android:name=".InputOutput.MainActivity2_Out"
             android:exported="false" />
         <activity
-            android:name=".MainActivity2_Input"
+            android:name=".InputOutput.MainActivity2_Input"
             android:exported="false" />
         <activity
-            android:name=".MainActivity2"
+            android:name=".InputOutput.MainActivity2"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -66,9 +66,6 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity
-            android:name=".MainActivity_Input"
-            android:exported="false" />
     </application>
 
 </manifest>

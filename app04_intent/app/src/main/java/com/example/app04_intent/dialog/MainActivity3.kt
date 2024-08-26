@@ -1,4 +1,4 @@
-package com.example.app04_intent
+package com.example.app04_intent.dialog
 
 import android.content.DialogInterface
 import android.os.Bundle
@@ -8,6 +8,7 @@ import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
+import com.example.app04_intent.R
 import com.example.app04_intent.databinding.ActivityMain3Binding
 import com.example.app04_intent.databinding.DialogInputBinding
 

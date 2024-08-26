@@ -1,4 +1,4 @@
-package com.example.app04_intent
+package com.example.app04_intent.InputOutput
 
 import android.content.Intent
 import android.os.Bundle
@@ -8,6 +8,7 @@ import androidx.activity.result.contract.ActivityResultContracts
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
+import com.example.app04_intent.R
 import com.example.app04_intent.databinding.ActivityMain2Binding
 
 class MainActivity2 : AppCompatActivity() {

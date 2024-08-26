@@ -1,4 +1,4 @@
-package com.example.app04_intent
+package com.example.app04_intent.sub
 
 import android.content.Intent
 import android.os.Bundle
@@ -8,6 +8,7 @@ import androidx.activity.result.contract.ActivityResultContracts
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
+import com.example.app04_intent.R
 import com.example.app04_intent.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
@@ -30,7 +31,7 @@ class MainActivity : AppCompatActivity() {
 
         }
         binding.btnAdd.setOnClickListener {
-            val intent = Intent(this@MainActivity,MainActivitySub::class.java)
+            val intent = Intent(this@MainActivity, MainActivitySub::class.java)
             intent.putExtra("Num1", binding.edtNum1.text.toString().toInt())
             intent.putExtra("Num2", binding.edtNum2.text.toString().toInt())
 

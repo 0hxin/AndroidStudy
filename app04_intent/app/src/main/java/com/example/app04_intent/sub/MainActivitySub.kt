@@ -1,4 +1,4 @@
-package com.example.app04_intent
+package com.example.app04_intent.sub
 
 import android.content.Intent
 import android.os.Bundle
@@ -6,6 +6,7 @@ import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
+import com.example.app04_intent.R
 import com.example.app04_intent.databinding.ActivityMainSubBinding
 
 class MainActivitySub : AppCompatActivity() {
