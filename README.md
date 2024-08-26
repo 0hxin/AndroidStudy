@@ -1,54 +1,83 @@
 ### 1. App04_intent
-#### 1. MainActivity
-> : 사용자가 입력한 두 숫자의 합계 계산하여 결과 표시
+#### 1. Package sub
+  > 사용자에게 숫자 두 개를 입력받아 더하기 연산 처리
 <details>
   <summary>calss</summary>
 
+  + ##### <mark>MainActivity</mark>
+    > 사용자 입력 받아 MainAcitivitySub 에 숫자 전달
+
   + ##### <mark>MainActivitySub</mark>
-  > 두 숫자 합계 계산하여 결과값 전달
+    > 두 숫자 합계 계산하여 결과값 전달
 </details>
 
 
-#### 2. MainActivity2
-> : 사용자 입력 및 출력을 다른 액티비티에서 처리
-<details>
-  <summary>input, output</summary>
-
-  + ##### <mark>MainActivity2_Input</mark>
-  > 이름, 나이, 전화번호 입력받아 MainActivity2 로 반환
-
-  + #### <mark>MainActivity2_Out</mark>
-  > MainActivity2 에서 전달받은 이름, 나이, 전화번호 데이터 출력
-</details>
-
-
-#### 3. MainActivity2_recycler
-> : RecyclerView 의 데이터 출력을 Adapter class 에서 구현
+#### 2. Package InputOutput
+  > 사용자에게 이름, 나이, 전화번호 입력받아 출력
 <details>
   <summary>class</summary>
 
+  + ##### <mark>MainActivity2</mark>
+    > 사용자 입력 및 출력 다른 액티비티에서 처리
+
+  + ##### <mark>MainActivity2_Input</mark>
+    > 이름, 나이, 전화번호 입력받아 MainActivity2 로 반환
+
+  + #### <mark>MainActivity2_Out</mark>
+    > MainActivity2 에서 전달받은 이름, 나이, 전화번호 데이터 출력
+</details>
+
+
+#### 3. Package recycler
+  > RecyclerView 데이터 출력
+<details>
+  <summary>class</summary>
+
+  + ##### <mark>MainActivity2_recycler</mark>
+    > RecyclerView 의 데이터 출력을 Adapter class 에서 구현
+    
   + ##### <mark>MyAdapter</mark>
     > 단순 문자열 리스트를 RecyclerView 에 표시하는 Adapter class
 </details>
 
 
-#### 4. MainActivity3
-> : Dialog 표시 및 CustomDialog 결과값 처리
-
-
-#### 5. MainActivity3_memo
-> : RecyclerView 의 데이터를 Adapter class 에서 구현
+#### 4. Package dialog
+  > Dialog 결과값 처리
 <details>
   <summary>class</summary>
 
+  + ##### <mark>MainActivity3</mark>
+    > Dialog, CustomDialog 출력 및 사용자 선택 결과값 처리
+</details>
+
+
+#### 5. Package recyclerMemo
+  > Recycler 데이터 출력
+<details>
+  <summary>class</summary>
+
+  + ##### <mark>MainActivity3_memo</mark>
+    > RecyclerView 의 데이터를 Adapter class 에서 구현
   + ##### <mark>memo</mark>
-  > no, title, timestamp 저장하는 data class
-  
+    > no, title, timestamp 저장하는 data class
 </details>
 
 <br>
 
 ### 2. App05
+#### 1. Package dialog
+
+
+#### 2. Package recycler
+
+
+#### 3. Package memoRecycler
+
+
+#### 4. Package movieRecycler
+
+
+#### 5. Package personRecycler
 
 <br>
 
