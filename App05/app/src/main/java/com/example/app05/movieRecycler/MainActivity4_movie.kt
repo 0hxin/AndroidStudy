@@ -1,13 +1,12 @@
-package com.example.app05
+package com.example.app05.movieRecycler
 
 import android.os.Bundle
-import android.util.Log
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import androidx.recyclerview.widget.GridLayoutManager
-import androidx.recyclerview.widget.LinearLayoutManager
+import com.example.app05.R
 import com.example.app05.databinding.Activity4MovieBinding
 
 class MainActivity4_movie : AppCompatActivity() {

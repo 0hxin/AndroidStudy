@@ -1,4 +1,4 @@
-package com.example.app05
+package com.example.app05.personRecycler
 
 data class Person5(val name:String , val phone:String)
 

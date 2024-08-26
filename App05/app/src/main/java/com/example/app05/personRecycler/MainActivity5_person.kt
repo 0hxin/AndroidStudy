@@ -1,4 +1,4 @@
-package com.example.app05
+package com.example.app05.personRecycler
 
 import android.content.DialogInterface
 import android.os.Bundle
@@ -8,6 +8,7 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import androidx.recyclerview.widget.LinearLayoutManager
+import com.example.app05.R
 import com.example.app05.databinding.Activity5PersonBinding
 import com.example.app05.databinding.CustomPersonBinding
 
@@ -50,8 +51,10 @@ class MainActivity5_person : AppCompatActivity() {
              setView(dialogPerson.root)
              setPositiveButton("확인", object:DialogInterface.OnClickListener {
                  override fun onClick(p0: DialogInterface?, p1: Int) {
-                     personList.add(Person5(dialogPerson.edtname.text.toString(),
-                                           dialogPerson.edtphone.text.toString()))
+                     personList.add(
+                         Person5(dialogPerson.edtname.text.toString(),
+                                           dialogPerson.edtphone.text.toString())
+                     )
                    //  binding.recyclerView5.adapter = personAdapter
                      personAdapter.notifyDataSetChanged()
                  }

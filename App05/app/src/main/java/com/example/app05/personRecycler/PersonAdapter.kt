@@ -1,4 +1,4 @@
-package com.example.app05
+package com.example.app05.personRecycler
 
 import android.util.Log
 import android.view.LayoutInflater

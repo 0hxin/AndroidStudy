@@ -1,4 +1,4 @@
-package com.example.app05
+package com.example.app05.recycler
 
 import android.view.LayoutInflater
 import android.view.ViewGroup
@@ -16,7 +16,7 @@ class MyAdapter(val data:MutableList<String>)
         return   data.size
     }
     override fun onBindViewHolder(holder: RecyclerView.ViewHolder, position: Int) {
-       val binding  = (holder as  MyViewHolder).binding
+       val binding  = (holder as MyViewHolder).binding
         binding.itemData.text = data[position]
     }
 }
