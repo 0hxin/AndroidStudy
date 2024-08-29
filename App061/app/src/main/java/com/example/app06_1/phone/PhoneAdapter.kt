@@ -1,8 +1,7 @@
-package com.example.app06_1
+package com.example.app06_1.phone
 
 import android.view.LayoutInflater
 import android.view.ViewGroup
-import android.widget.Toast
 import androidx.recyclerview.widget.RecyclerView
 import com.example.app06_1.databinding.ItemPhoneBinding
 
@@ -13,7 +12,7 @@ class PhoneAdapter (val phoneList:MutableList<Phone>)
         fun onItemClick(pos:Int)
     }
     
-    var onItemClickLister:OnItemClickLister? = null // 인터페이스 OnItemClickLister 자료형 변수 선언
+    var onItemClickLister: OnItemClickLister? = null // 인터페이스 OnItemClickLister 자료형 변수 선언
 
     // 추가
     fun addItem(phone: Phone) {
@@ -45,11 +44,11 @@ class PhoneAdapter (val phoneList:MutableList<Phone>)
         }
     }
 
-    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): PhoneAdapter.PhoneHolder {
+    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): PhoneHolder {
         return PhoneHolder(ItemPhoneBinding.inflate(LayoutInflater.from(parent.context), parent, false))
     }
 
-    override fun onBindViewHolder(holder: PhoneAdapter.PhoneHolder, position: Int) {
+    override fun onBindViewHolder(holder: PhoneHolder, position: Int) {
         holder.binding.name.setText(phoneList[position].name)
         holder.binding.tel.setText(phoneList[position].tel)
     }

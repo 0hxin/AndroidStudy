@@ -1,4 +1,4 @@
-package com.example.app06_1
+package com.example.app06_1.friend
 
 import android.os.Bundle
 import androidx.activity.enableEdgeToEdge
@@ -6,6 +6,7 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import androidx.recyclerview.widget.LinearLayoutManager
+import com.example.app06_1.R
 import com.example.app06_1.databinding.ActivityMain2Binding
 
 class MainActivity2 : AppCompatActivity() {
@@ -37,7 +38,7 @@ class MainActivity2 : AppCompatActivity() {
         val friendAdapter = FriendAdapter(friendList)
         var position = 0
 
-        friendAdapter.onItemClickLister = object:FriendAdapter.OnItemClickLister{
+        friendAdapter.onItemClickLister = object: FriendAdapter.OnItemClickLister {
             override fun onItemClick(pos: Int) {
                 position = pos
 

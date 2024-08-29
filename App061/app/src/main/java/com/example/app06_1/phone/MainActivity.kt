@@ -1,12 +1,12 @@
-package com.example.app06_1
+package com.example.app06_1.phone
 
 import android.os.Bundle
-import android.widget.Toast
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import androidx.recyclerview.widget.LinearLayoutManager
+import com.example.app06_1.R
 import com.example.app06_1.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
@@ -42,7 +42,7 @@ class MainActivity : AppCompatActivity() {
         // 몇 번째 data 인지 저장할 position 변수 선언
         var position = 0
         // phoneAdapter 의 onItemClickLister interface 호출
-        phoneAdapter.onItemClickLister = object:PhoneAdapter.OnItemClickLister{
+        phoneAdapter.onItemClickLister = object: PhoneAdapter.OnItemClickLister {
             // PhoneAdapter interface override 하여 MainActivity 에서 구현
             override fun onItemClick(pos: Int) {
                 // 사용자가 클릭한 list item 가져옴
@@ -66,15 +66,18 @@ class MainActivity : AppCompatActivity() {
 
         // 추가
         binding.insertBtn.setOnClickListener {
-            phoneAdapter.addItem(Phone(binding.inputName.text.toString(),
-                binding.inputTel.text.toString()))
+            phoneAdapter.addItem(
+                Phone(binding.inputName.text.toString(),
+                binding.inputTel.text.toString())
+            )
 
             resetInputBtn()
         }
 
         // 수정
         binding.updateBtn.setOnClickListener {
-            phoneAdapter.updateItem(Phone(binding.inputName.text.toString(),
+            phoneAdapter.updateItem(
+                Phone(binding.inputName.text.toString(),
                 binding.inputTel.text.toString()), position)
             
             resetInputBtn()
