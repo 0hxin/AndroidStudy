@@ -60,65 +60,120 @@
     > RecyclerView 의 데이터를 Adapter class 에서 구현
   + ##### <mark>memo</mark>
     > no, title, timestamp 저장하는 data class
+  + ##### <mark>CustomAdapter</mark>
+    > 단순 문자열 리스트를 RecyclerView 에 표시하는 Adapter class
+    > RecyclerView 데이터 선택 시, Toast 로 출력
 </details>
 
 <br>
 
 ### 2. App05
 #### 1. Package dialog
+  > Dialog
+<details>
+  <summary>class</summary>
 
+  + ##### <mark>MainActivity</mark>
+    > Dialog, CustomDialog 출력 및 사용자 선택 결과값 처리
+</details>
 
 #### 2. Package recycler
+  > Recycler 데이터 출력
+<details>
+  <summary>class</summary>
 
+  + ##### <mark>MainActivity2_recycler</mark>
+    > RecyclerView 의 데이터를 Adapter class 에서 구현
+  + ##### <mark>MyAdapter</mark>
+    > 단순 문자열 리스트를 RecyclerView 에 표시하는 Adapter class
+</details>
 
 #### 3. Package memoRecycler
+  > Recycler 데이터 출력
+<details>
+  <summary>class</summary>
 
+  + ##### <mark>MainActivity3_memo</mark>
+    > RecyclerView 의 데이터를 Adapter class 에서 구현
+  + ##### <mark>memo</mark>
+    > no, title, timestamp 저장하는 data class
+  + ##### <mark>CustomAdapter</mark>
+    > 단순 문자열 리스트를 RecyclerView 에 표시하는 Adapter class
+    > RecyclerView 데이터 선택 시, Toast 로 출력
+      >> itemView.setOnClickListener 와 binding.root.setOnLongClickListener 로 구현
+</details>
 
 #### 4. Package movieRecycler
+  > Recycler 데이터 출력 (이미지도 함께)
+<details>
+  <summary>class</summary>
 
+  + ##### <mark>MainActivity4_movie</mark>
+    > RecyclerView 의 데이터를 Adapter class 에서 구현
+  + ##### <mark>MovieItem</mark>
+    > posterId, title 저장하는 data class
+  + ##### <mark>MovieAdapter</mark>
+    > 문자열과 이미지 리스트를 RecyclerView 에 표시하는 Adapter class
+    > onBindViewHolder 함수를 MovieHolder 의 fun getItem 함수로 구현
+</details>
 
 #### 5. Package personRecycler
+  > Recycler 데이터 출력 전체보기 버튼 추가 버튼 구현
+<details>
+  <summary>class</summary>
+
+  + ##### <mark>MainActivity5_person</mark>
+    > RecyclerView 의 데이터를 Adapter class 에서 구현
+    > 추가 버튼 클릭 시 Dialog 생성
+  + ##### <mark>Person5</mark>
+    > name, phone 저장하는 data class
+  + ##### <mark>PersonAdapter</mark>
+    > 단순 문자열 리스트를 RecyclerView 에 표시하는 Adapter class
+    > RecyclerView 데이터 Click -> Toast 출력
+    > RecyclerView 데이터 Long Click -> 삭제
+</details>
 
 <br>
 
 ### 3. App06-1
-#### 1. MainActivity
-> : RecyclerView 의 데이터 추가, 수정, 삭제를 Adapter class 에서 구현
+#### 1. Package phone
+  > Recycler 데이터 출력 및 추가, 수정, 삭제
 <details>
   <summary>class</summary>
-  
-+ ##### <mark>Phone</mark>
-  > name, tel 저장하는 data class
-  
-+ ##### <mark>PhoneAdapter</mark>
-  > MainActivity 의 RecyclerView 에 Phone 목록 표시하는 Adapter class
-  + addItem(아이템 추가)
-    > 'phoneList' 데이터 추가
-  + updateItem(아이템 수정)
-    > 'phoneList' 특정 데이터 수정
-  + deleteItem(아이템 삭제)
-    > 'phoneList' 특정 데이터 삭제
-  + OnItemClickLister Interface
-    > RecyclerView 아이템 클릭 시 해당 위치 처리하도록 인터페이스 정의
-  + itemView.setOnClickListener
-    > RecyclerView 아이템 클릭 시 onItemClick 메서드 호출
+
+  + ##### <mark>MainActivity</mark>
+    > RecyclerView 의 데이터를 Adapter class 에서 구현
+  + ##### <mark>Phone</mark>
+    > name, tel 저장하는 data class
+  + ##### <mark>PhoneAdapter</mark>
+    > MainActivity 의 RecyclerView 에 Phone 목록 표시하는 Adapter class
+    + addItem(아이템 추가)
+      > 'phoneList' 데이터 추가
+    + updateItem(아이템 수정)
+      > 'phoneList' 특정 데이터 수정
+    + deleteItem(아이템 삭제)
+      > 'phoneList' 특정 데이터 삭제
+    + OnItemClickLister Interface
+      > RecyclerView 아이템 클릭 시 해당 위치 처리하도록 인터페이스 정의
+    + itemView.setOnClickListener
+      > RecyclerView 아이템 클릭 시 onItemClick 메서드 호출
 </details>
 
-
-#### 2. MainActivity2
-> : RecyclerView 의 데이터 추가, 수정, 삭제를 MainActivity2 에서 구현
+#### 2. Package friend
+  > Recycler 데이터 출력 및 추가, 수정, 삭제
 <details>
   <summary>class</summary>
 
-+ ##### <mark>Friend</mark>
-  > resourceId, name, msg 저장하는 data class
-  
-+ ##### <mark>FriendAdapter</mark>
-  > MainActivity2 의 RecyclerView 에 Phone 목록 표시하는 Adapter class
-  + OnItemClickLister Interface
-    > RecyclerView 아이템 클릭 시 해당 위치 처리하도록 인터페이스 정의
-  + itemView.setOnClickListener
-    > RecyclerView 아이템 클릭 시 onItemClick 메서드 호출
+  + ##### <mark>MainActivity2</mark>
+    > RecyclerView 의 데이터 추가, 수정, 삭제를 MainActivity2 에서 구현
+  + ##### <mark>Friend</mark>
+    > resourceId, name, msg 저장하는 data class
+  + ##### <mark>FriendAdapter</mark>
+    > MainActivity2 의 RecyclerView 에 Phone 목록 표시하는 Adapter class
+    + OnItemClickLister Interface
+      > RecyclerView 아이템 클릭 시 해당 위치 처리하도록 인터페이스 정의
+    + itemView.setOnClickListener
+      > RecyclerView 아이템 클릭 시 onItemClick 메서드 호출
 </details>
 
 <br>
