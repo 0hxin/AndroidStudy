@@ -180,3 +180,23 @@
 
 ### ~~App06-2~~
 ### 4. App06-3
+  > Open API Json 파싱
+<details>
+  <summary>class</summary>
+
+  + ##### <mark>MainActivity</mark>
+    > Retrofit 통해 Open API 호출하여 RecyclerView 에 출력
+    > Photo, Post, Comment 버튼 이벤트
+  + ##### <mark>JsonClient</mark>
+    > Retrofit 인스턴스 생성
+    > Retrofit 라이브러리 사용하여 Http 요청 처리
+  + ##### <mark>JsonInterface</mark>
+    > API 호출 정의
+    > 'photos' 'posts' 'commets' 엔드포인트에 대한 GET 요청
+  + ##### <mark>Photo / Post / Comment</mark>
+    > Photo : albumId, id, title, url, thumbnailUrl 저장하는 data class
+    > Post : userId, id, title, body 저장하는 data class
+    > Comment : postId, id, name, email, body 저장하는 data class
+  + ##### <mark>PhotoAdapter / PostAdapter / CommentAdapter</mark>
+    > MainActivity 의 RecyclerView 에 각각 phone / post / comment 데이터 표시하는 Adapter class
+</details>
