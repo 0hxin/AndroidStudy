@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#7691AF"
-    tools:context=".Fragment_Song">
+    tools:context=".musicFragment.Fragment_Song">
     <TextView
         android:layout_width="match_parent"
         android:layout_height="match_parent"

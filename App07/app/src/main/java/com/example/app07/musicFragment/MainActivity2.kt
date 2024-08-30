@@ -1,4 +1,4 @@
-package com.example.app07
+package com.example.app07.musicFragment
 
 import android.os.Bundle
 import android.view.View
@@ -7,6 +7,7 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import androidx.fragment.app.Fragment
+import com.example.app07.R
 import com.example.app07.databinding.ActivityMain2Binding
 
 class MainActivity2 : AppCompatActivity() {

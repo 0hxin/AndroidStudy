@@ -1,12 +1,11 @@
-package com.example.app07
+package com.example.app07.musicFragment
 
-import android.content.Context
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import com.example.app07.databinding.FragmentListBinding
+import com.example.app07.R
 
 // TODO: Rename parameter arguments, choose names that match
 // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -15,16 +14,14 @@ private const val ARG_PARAM2 = "param2"
 
 /**
  * A simple [Fragment] subclass.
- * Use the [ListFragment.newInstance] factory method to
+ * Use the [Fragment_Song.newInstance] factory method to
  * create an instance of this fragment.
  */
-class ListFragment : Fragment() {
+class Fragment_Song : Fragment() {
     // TODO: Rename and change types of parameters
     private var param1: String? = null
     private var param2: String? = null
 
-    lateinit var binding: FragmentListBinding
-    var mainActivity:MainActivity? = null
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         arguments?.let {
@@ -38,25 +35,7 @@ class ListFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
-        binding = FragmentListBinding.inflate(inflater, container, false)
-
-        // next
-        binding.nextBtn.setOnClickListener {
-            mainActivity?.goDetail()
-        }
-
-        binding.textTitle.text = arguments?.getString("key1")
-        binding.textValue.text = arguments?.getInt("key2").toString()
-        return binding.root
-    }
-
-    fun setValue(value:String){
-        binding.textFromActivity.text = value
-    }
-
-    override fun onAttach(context: Context) {
-        super.onAttach(context)
-        mainActivity = context as MainActivity
+        return inflater.inflate(R.layout.fragment__song, container, false)
     }
 
     companion object {
@@ -66,12 +45,12 @@ class ListFragment : Fragment() {
          *
          * @param param1 Parameter 1.
          * @param param2 Parameter 2.
-         * @return A new instance of fragment ListFragment.
+         * @return A new instance of fragment Fragment_Song.
          */
         // TODO: Rename and change types and number of parameters
         @JvmStatic
         fun newInstance(param1: String, param2: String) =
-            ListFragment().apply {
+            Fragment_Song().apply {
                 arguments = Bundle().apply {
                     putString(ARG_PARAM1, param1)
                     putString(ARG_PARAM2, param2)

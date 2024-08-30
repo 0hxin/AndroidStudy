@@ -8,7 +8,7 @@
     android:orientation="vertical"
     android:gravity="center_horizontal"
     android:padding="10dp"
-    tools:context=".MainActivity2">
+    tools:context=".musicFragment.MainActivity2">
     <TextView
         android:layout_margin="10dp"
         android:layout_width="match_parent"

@@ -1,16 +1,17 @@
-package com.example.app07
+package com.example.app07.fragment
 
 import android.os.Bundle
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
+import com.example.app07.R
 import com.example.app07.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
     // lateinit : 변수를 미리 선언한 후, 초기화 후에 하겠다 알림
     // 초기화 미리 하지 않아도 변수 사용이 가능함
-    lateinit var listFragment:ListFragment
+    lateinit var listFragment: ListFragment
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
