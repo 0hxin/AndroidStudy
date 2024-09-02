@@ -81,7 +81,9 @@ class MainActivity : AppCompatActivity() {
 
         // 추가 버튼
         binding.pluseBtn.setOnClickListener {
-            val intent = Intent(this@MainActivity, MainActivity_Insert::class.java)
+            val intent = Intent(this@MainActivity, MainActivity_Update::class.java)
+            val db = "insert"
+            intent.putExtra("db", db)
             // startActivity(intent)
             activityInsert.launch(intent)
         }
