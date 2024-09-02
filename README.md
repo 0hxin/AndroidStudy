@@ -200,3 +200,19 @@
   + ##### <mark>PhotoAdapter / PostAdapter / CommentAdapter</mark>
     > MainActivity 의 RecyclerView 에 각각 phone / post / comment 데이터 표시하는 Adapter class
 </details>
+
+<br>
+
+### 5. App07
+#### 1. Package fragment
+  > Fragment 와 Activity 간 상호작용
+<details>
+  <summary>class</summary>
+
+  + ##### <mark>MainActivity</mark>
+    > setFragment() 메서드 사용하여 ListFragment 생성 및 설정
+    > 버튼 클릭에 따른 Fragment 전환
+</details>
+
+#### 2. Package musicFragment
+  > Fragment 사용
