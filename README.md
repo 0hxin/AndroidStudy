@@ -216,3 +216,37 @@
 
 #### 2. Package musicFragment
   > Fragment 사용
+<details>
+  <summary>class</summary>
+
+  + ##### <mark>MainActivity2</mark>
+    > fun fragmentLayout(fragment : Fragment) 및 inner class ClickHandler() 에 따른 Fragment 전환
+    > 버튼 클릭에 따라 Fragment_Album, Fragment_Song, Fragment_Artist 각각 Fragment 부착
+</details>
+
+<br>
+
+### 6. App07_Frag
+#### 1. Package fragment
+  > ReceiverFragment 와 SenderFragment 통신
+  > SenderFragment 버튼 클릭에 따라 ReceiverFragment 글자 색상 및 문장 변화
+<details>
+  <summary>class</summary>
+
+  + ##### <mark>MainActivity</mark>
+    > ReceiverFragment 와 SenderFragment 부착
+</details>
+
+#### 2. Package fragmentColor
+  > ColorChangeReceiverFragment 와 ColorChangeSenderFragment 통신
+  > ColorChangeSenderFragment 버튼 클릭에 따라 ColorChangeReceiverFragment 배경 색상 변화
+<details>
+  <summary>class</summary>
+
+  + ##### <mark>MainActivity2</mark>
+    > ColorChangeReceiverFragment 와 ColorChangeSenderFragment 부착
+</details>
+
+<br>
+
+### 7. App07_ViewPager
