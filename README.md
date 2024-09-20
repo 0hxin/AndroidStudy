@@ -245,3 +245,96 @@
 
 ### 7. App07_ViewPager
   > ViewPager 와 TabLayout 사용하여 Fragment 관리
+
+<br>
+
+### 8. App08_ViewPager
+#### 1. Package adapter
+  > ViewPager2 페이지 슬라이드
+<details>
+  <summary>class</summary>
+
+  + ##### <mark>MainActivity</mark>
+    + 슬라이드 할 페이지 색상, 제목 포함하는 DataPage 객체 리스트 생성
+    + ViewPager2 ViewPagerAdapter 연결
+    + 버튼 클릭 -> ViewPager2 슬라이드 방향 토글
+  + ##### <mark>DataPage</mark>
+    + color, title 저장하는 data class
+  + ##### <mark>ViewPagerAdapter</mark>
+    + MainActivity 의 ViewPage2 와 연결
+    + 각 페이지의 데이터 표시하는 역할
+    + DataPage 객체로 구성
+</details>
+
+#### 2. Package fragment
+  > ViewPager2 사용 여러 개 Fragment 표시
+<details>
+  <summary>class</summary>
+
+  + ##### <mark>MainActivity2</mark>
+    + ViewPager2 MyFragAdapter2 연결
+  + ##### <mark>MyFragAdapter2</mark>
+    + ViewPager2 와 함께 사용할 FragmentStateAdapter 정의
+    + 여러 개 Fragment (FragmentOne, Two, Three, Four) 관리
+    + 각 페이지 내용 동적 제공
+</details>
+
+#### 3. Package tab
+  > ViewPager2 와 TapLayout 함께 사용
+<details>
+  <summary>class</summary>
+
+  + ##### <mark>MainActivity3</mark>
+    + ViewPager2 ContentAdapter 연결
+    + TabLayoutMediator 사용하여 TabLayout 과 ViewPager 연결
+  + ##### <mark>ContentAdapter</mark>
+    + FragmentTab1, 2, 3 이 담긴 Fragment 객체 리스트 생성
+    + 여러 Fragmenet 관리
+</details>
+
+<br>
+
+### 9. App08_menu
+#### 1. MainActivity
+  > 상단 툴바와 검색 기능 설정
+<details>
+  <summary>class</summary>
+
+  + ##### <mark>MainActivity</mark>
+    + 슬라이드 할 페이지 색상, 제목 포함하는 DataPage 객체 리스트 생성
+    + ViewPager2 ViewPagerAdapter 연결
+    + 버튼 클릭 -> ViewPager2 슬라이드 방향 토글
+  + ##### <mark>DataPage</mark>
+    + color, title 저장하는 data class
+  + ##### <mark>ViewPagerAdapter</mark>
+    + MainActivity 의 ViewPage2 와 연결
+    + 각 페이지의 데이터 표시하는 역할
+    + DataPage 객체로 구성
+</details>
+
+#### 2. Package customMenu
+  > ViewPager, ActionBarDrawerToggle 사용
+<details>
+  <summary>class</summary>
+
+  + ##### <mark>MainActivity2</mark>
+    + xml 에서 정의한 툴바 액션 바로 설정
+    + ActionBarDrawerToggle 초기화하여 열기/닫기 상태 관리
+    + onCreateOptionMenu 메서드로 메뉴 생성
+    + searchView 의 쿼리 텍스트 리스너 설정
+      + 사용자 검색어 입력 시, onQueryTextChange 호출하여 로그에 입력된 텍스트 출력
+  + ##### <mark>MyAdapter</mark>
+    + 단순 문자열 리스트를 RecyclerView 에 표시하는 Adapter class
+  + ##### <mark>MyFragmentPagerAdapter</mark>
+    + MainActivity2 의 ViewPage2 와 연결
+    + FragmentOne, Two, Three 담긴 Fragment 객체 리스트 생성
+    + 여러 Fragmenet 관리
+</details>
+
+<br>
+
+### 10. App08_chapt12
+
+<br>
+
+### 11. App08_1
